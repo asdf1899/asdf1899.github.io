@@ -41,31 +41,49 @@ mark{
   color: white;
 }
 
-.style-h3-text{
+.style-h3-text, .style-h4-text{
   color:white;
   text-align: center;
 }
-
+.style-h4-text{
+  margin: 0;
+}
 .style-card-corners{
   border:none;
   border-radius:17px;
   padding:10px;
   margin-top:20px;
 }
-.style-contact-button{
+.style-button, .style-button-more{
   color: white;
-  background-color: #2980b9;
   border: none;
   border-radius: 20px!important;
   padding: 15px;
   height: 40px;
   width: 100px;
   margin: 10px;
+  outline: none;
 }
-
+.style-button{
+  background-color: #2980b9;
+}
+.style-button:hover{
+  background-color: white;
+  color: #2980b9;
+}
+.style-button-more{
+  background-color: #2ecc71!important;
+}
+.style-button-more:hover{
+  background-color: white!important;
+  color: #2ecc71!important;
+}
 @media (max-width: 600px){
   .style-h3-text{
     font-size: 20px!important;
+  }
+  .style-h4-text{
+    font-size: 15px!important;
   }
 }
 .style-bounce {

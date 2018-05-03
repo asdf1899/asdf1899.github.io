@@ -16,7 +16,6 @@
     <script src="js/material.min.js"></script>
     <script src="js/sweetalert.js"></script>
     <script src="js/jquery.min.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   </head>
   <body>
@@ -47,7 +46,7 @@
           <a class="mdl-navigation__link" style="color:#e74c3c!important" href="">GitHub</a>
         </nav>
       </div>
-      <main class="mdl-layout__content">
+      <main class="mdl-layout__content style-bg-grey">
         <section class="style-diagonal-bg1">
           <div id="header" class="style-parent">
             <div class="style-child">
@@ -60,37 +59,45 @@
           <div id="bio" style="text-align:center;padding:10%">
             <h1 class="mdl-color-text--white" style="text-align:left">BIO</h1>
             <hr style="width:100px;border:5px solid white;border-radius:10px;background:white;">
-            <h3 class="style-h3-text">I'm <mark>Anas Araid</mark>.<i class="material-icons">whatshot</i></h3>
+            <h3 class="style-h3-text">I'm <mark>Anas Araid</mark>.</h3>
             <h3 class="style-h3-text">A student that like clear, creative and cool ideas.<i class="material-icons">all_inclusive</i></h3>
           </div>
         </section>
         <section style="background:white">
-          <div id="projects" style="text-align:center;margin:10%">
+          <div id="projects" style="text-align:center;margin:10%;padding:10%">
             <h1 style="text-align:left;color:#e74c3c">PROJECTS</h1>
             <hr style="width:100px;border:5px solid #e74c3c;border-radius:10px;background:#e74c3c;">
             <div class="mdl-grid">
               <div class="mdl-card mdl-cell mdl-cell--6-col mdl-shadow--4dp mdl-color--white style-card-corners">
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/asdf1899/s-now" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star asdf1899/s-now on GitHub">Star</a>
+                <h3 style="color:#3498db">s-now</h3>
+                <button class="style-button" onclick="window.open('https://www.github.com/asdf1899/s-now', '_blank')">MORE</button>
               </div>
               <div class="mdl-card mdl-cell mdl-cell--6-col mdl-shadow--4dp mdl-color--white style-card-corners">
-                <!-- Place this tag where you want the button to render. -->
-                <a class="github-button" href="https://github.com/asdf1899/eDOT" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star asdf1899/eDOT on GitHub">Star</a>
+                <h3 style="color:#27ae60">eDOT</h3>
+                <button class="style-button-more" onclick="window.open('https://www.github.com/asdf1899/eDOT', '_blank')">MORE</button>
               </div>
             </div>
+          </div>
+        </section>
+        <section>
+          <div style="text-align:center">
+            <h3 class="style-h3-text">Take the best that exists and make it better.</h3>
+            <h3 class="style-h3-text">If doesn't exist, create it. <i class="material-icons">whatshot</i></h3>
           </div>
         </section>
         <section id="contact" class="style-diagonal-bg2">
           <div style="padding:8%;text-align:center">
             <h1 class="mdl-color-text--white" style="text-align:left;margin-top:10%;">CONTACT ME</h1>
             <hr style="width:100px;border:5px solid white;border-radius:10px;background:white;">
-            <button class="style-contact-button" onclick="location.href='mailto:araid.anas99@gmail.com'">EMAIL</button>
+            <button class="style-button" onclick="location.href='mailto:araid.anas99@gmail.com'">EMAIL</button>
             <br>
-            <button class="style-contact-button" onclick="window.open('https://www.github.com/asdf1899', '_blank')">GITHUB</button>
+            <button class="style-button" onclick="window.open('https://www.github.com/asdf1899', '_blank')">GITHUB</button>
           </div>
         </section>
         <footer id="footer" style="background-color:#34495e">
-          
+          <div style="text-align:center">
+            <h4 class="style-h4-text"><i class="material-icons">code</i> with <i class="material-icons">free_breakfast</i> by <mark>Anas Araid</mark><h4>
+          </div>
         </footer>
       </main>
     </div>
