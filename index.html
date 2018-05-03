@@ -18,7 +18,7 @@
     <script src="js/jquery.min.js"></script>
   </head>
   <body>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout style-bg-grey">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
       <header class="mdl-layout__header mdl-layout__header--transparent style-bg-red">
         <div class="mdl-layout__header-row">
           <!-- Title -->
@@ -29,36 +29,46 @@
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="#header">HOME</a>
             <a class="mdl-navigation__link" href="#bio">BIO</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="projects">PROJECTS</a>
+            <a class="mdl-navigation__link" href="">CONTACT ME</a>
+            <a class="mdl-navigation__link" href="">GitHub</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">asdf1899</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#header">HOME</a>
+          <a class="mdl-navigation__link" style="color:#e74c3c!important" href="#header">HOME</a>
           <a class="mdl-navigation__link" href="#bio">BIO</a>
-          <a class="mdl-navigation__link" href="">Link</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" style="color:#e74c3c!important" href="projects">PROJECTS</a>
+          <a class="mdl-navigation__link" href="">CONTACT ME</a>
+          <a class="mdl-navigation__link" style="color:#e74c3c!important" href="">GitHub</a>
         </nav>
       </div>
       <main class="mdl-layout__content">
-        <div class="style-bg-right-angle">
-          <section id="header" class="style-parent">
+        <section class="style-bg-right-angle">
+          <div id="header" class="style-parent">
             <div class="style-child">
               <h1 class="mdl-color-text--white">Hi.</h1>
               <div class="style-arrow style-bounce">
                 <i class="material-icons">keyboard_arrow_down</i>
               </div>
             </div>
-          </section>
-          <section id="bio" class="mdl-grid">
-            <div class="mdl-cell mdl-cell--12-col">
-              <h3 class="style-h3-text">I'm Anas Araid. I like clear, outstanding and creative ideas.</h3>
-            </div>
-          </section>
-        </div>
+          </div>
+          <div id="bio" style="text-align:center;padding:10%">
+            <h1 class="mdl-color-text--white" style="text-align:left">BIO</h1>
+            <hr style="width:100px;border:5px solid white;border-radius:10px;background:white;">
+            <h3 class="style-h3-text">I'm Anas Araid.<i class="material-icons">whatshot</i></h3>
+            <h3 class="style-h3-text">A student that like clear, creative and cool ideas.<i class="material-icons">all_inclusive</i></h3>
+          </div>
+        </section>
+        <section style="background:white">
+          <div id="asdf" style="text-align:center;margin:10%">
+            <h1 style="text-align:left;color:#e74c3c">PROJECTS</h1>
+            <hr style="width:100px;border:5px solid #e74c3c;border-radius:10px;background:#e74c3c;">
+
+          </div>
+        </section>
       </main>
     </div>
   </body>

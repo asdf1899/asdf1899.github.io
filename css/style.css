@@ -6,11 +6,7 @@ body, h1, h2, h3, h4, h5, h6, p, a{
 }
 .style-bg-right-angle{
   /*background-color: #e74c3c!important;*/
-  background: -webkit-linear-gradient(265deg, #e74c3c 60%, #34495e 40%)!important;
-}
-.style-bg-left-angle{
-  /*background-color: #e74c3c!important;*/
-  background: -webkit-linear-gradient(95deg, #e74c3c 60%, #34495e 40%)!important;
+  background: -webkit-linear-gradient(265deg, #e74c3c 50%, #34495e 50%)!important;
 }
 .style-child{
   display:table-cell;
