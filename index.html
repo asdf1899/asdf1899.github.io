@@ -16,9 +16,11 @@
     <script src="js/material.min.js"></script>
     <script src="js/sweetalert.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
   </head>
   <body>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--transparent style-bg-red">
         <div class="mdl-layout__header-row">
           <!-- Title -->
@@ -26,12 +28,12 @@
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
-          <nav class="mdl-navigation">
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
             <a class="mdl-navigation__link" href="#header">HOME</a>
             <a class="mdl-navigation__link" href="#bio">BIO</a>
-            <a class="mdl-navigation__link" href="projects">PROJECTS</a>
-            <a class="mdl-navigation__link" href="">CONTACT ME</a>
-            <a class="mdl-navigation__link" href="">GitHub</a>
+            <a class="mdl-navigation__link" href="#projects">PROJECTS</a>
+            <a class="mdl-navigation__link" href="#contact">CONTACT ME</a>
+            <a class="mdl-navigation__link" href="https://www.github.com/asdf1899" target="_blank">GitHub</a>
           </nav>
         </div>
       </header>
@@ -41,12 +43,12 @@
           <a class="mdl-navigation__link" style="color:#e74c3c!important" href="#header">HOME</a>
           <a class="mdl-navigation__link" href="#bio">BIO</a>
           <a class="mdl-navigation__link" style="color:#e74c3c!important" href="projects">PROJECTS</a>
-          <a class="mdl-navigation__link" href="">CONTACT ME</a>
+          <a class="mdl-navigation__link" href="#contact">CONTACT ME</a>
           <a class="mdl-navigation__link" style="color:#e74c3c!important" href="">GitHub</a>
         </nav>
       </div>
       <main class="mdl-layout__content">
-        <section class="style-bg-right-angle">
+        <section class="style-diagonal-bg1">
           <div id="header" class="style-parent">
             <div class="style-child">
               <h1 class="mdl-color-text--white">Hi.</h1>
@@ -63,12 +65,33 @@
           </div>
         </section>
         <section style="background:white">
-          <div id="asdf" style="text-align:center;margin:10%">
+          <div id="projects" style="text-align:center;margin:10%">
             <h1 style="text-align:left;color:#e74c3c">PROJECTS</h1>
             <hr style="width:100px;border:5px solid #e74c3c;border-radius:10px;background:#e74c3c;">
-
+            <div class="mdl-grid">
+              <div class="mdl-card mdl-cell mdl-cell--6-col mdl-shadow--4dp mdl-color--white style-card-corners">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/asdf1899/s-now" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star asdf1899/s-now on GitHub">Star</a>
+              </div>
+              <div class="mdl-card mdl-cell mdl-cell--6-col mdl-shadow--4dp mdl-color--white style-card-corners">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/asdf1899/eDOT" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star asdf1899/eDOT on GitHub">Star</a>
+              </div>
+            </div>
           </div>
         </section>
+        <section id="contact" class="style-diagonal-bg2">
+          <div style="padding:8%;text-align:center">
+            <h1 class="mdl-color-text--white" style="text-align:left;margin-top:10%;">CONTACT ME</h1>
+            <hr style="width:100px;border:5px solid white;border-radius:10px;background:white;">
+            <button class="style-contact-button" onclick="location.href='mailto:araid.anas99@gmail.com'">EMAIL</button>
+            <br>
+            <button class="style-contact-button" onclick="window.open('https://www.github.com/asdf1899', '_blank')">GITHUB</button>
+          </div>
+        </section>
+        <footer id="footer" style="background-color:#34495e">
+          
+        </footer>
       </main>
     </div>
   </body>
