@@ -18,7 +18,7 @@
     <script src="js/jquery.min.js"></script>
   </head>
   <body>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout style-bg-angle">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout style-bg-red">
       <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout__header-row">
           <!-- Title -->
@@ -27,8 +27,8 @@
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="#header">HOME</a>
+            <a class="mdl-navigation__link" href="">BIO</a>
             <a class="mdl-navigation__link" href="">Link</a>
             <a class="mdl-navigation__link" href="">Link</a>
           </nav>
@@ -37,13 +37,21 @@
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">asdf1899</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">BIO</a>
           <a class="mdl-navigation__link" href="">Link</a>
           <a class="mdl-navigation__link" href="">Link</a>
           <a class="mdl-navigation__link" href="">Link</a>
         </nav>
       </div>
       <main class="mdl-layout__content">
+        <section id="header" class="style-parent style-bg-angle">
+          <div class="style-child">
+            <h1 class="mdl-color-text--white">Hi.</h1>
+            <div class="style-arrow style-bounce">
+              <i class="material-icons">keyboard_arrow_down</i>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   </body>
