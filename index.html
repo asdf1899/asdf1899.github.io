@@ -48,7 +48,7 @@
       </div>
       <main class="mdl-layout__content style-bg-grey">
         <script>
-          swal("Hi!", "Welcome to my personal website", "success");
+          swal("Congratulation!", "Welcome to my personal website", "success");
           $(document).ready(() => {
               nitemarket.MaterialUtils.activateExpandableFAB();
           });
@@ -62,22 +62,13 @@
 
             <div class="mdl-fab-expandable--child">
               <button id="button-git"
-                      class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--grey"
+                      class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
+                      style="background-color:#8e44ad"
                       onclick="window.open('https://www.github.com/asdf1899', '_blank')">
                 <i class="material-icons">code</i>
               </button>
-              <div class="mdl-fab-expandable--child-label mdl-color-text--grey">
-                <label>GitHub</label>
-              </div>
-            </div>
-            <div class="mdl-fab-expandable--child">
-              <button id="button-settings-bio"
-                      class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--green"
-                      onclick="location.href='#bio'">
-                <i class="material-icons">account_circle</i>
-              </button>
-              <div class="mdl-fab-expandable--child-label mdl-color-text--green">
-                <label>Bio</label>
+              <div class="mdl-fab-expandable--child-label">
+                <label style="color:#8e44ad">GitHub</label>
               </div>
             </div>
             <div class="mdl-fab-expandable--child">
@@ -88,6 +79,16 @@
               </button>
               <div class="mdl-fab-expandable--child-label mdl-color-text--blue">
                 <label>Contact Me</label>
+              </div>
+            </div>
+            <div class="mdl-fab-expandable--child">
+              <button id="button-settings-contact"
+                      class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-color--green"
+                      onclick="location.href='#header'">
+                <i class="material-icons">keyboard_arrow_up</i>
+              </button>
+              <div class="mdl-fab-expandable--child-label mdl-color-text--green">
+                <label>Home</label>
               </div>
             </div>
           </div>
