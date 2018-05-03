@@ -4,9 +4,13 @@ body, h1, h2, h3, h4, h5, h6, p, a{
 .mdl-layout__drawer-button {
   color: white;
 }
-.style-bg-angle{
+.style-bg-right-angle{
   /*background-color: #e74c3c!important;*/
-  background: -webkit-linear-gradient(265deg, #e74c3c 70%, #34495e 50%)!important;
+  background: -webkit-linear-gradient(265deg, #e74c3c 60%, #34495e 40%)!important;
+}
+.style-bg-left-angle{
+  /*background-color: #e74c3c!important;*/
+  background: -webkit-linear-gradient(95deg, #e74c3c 60%, #34495e 40%)!important;
 }
 .style-child{
   display:table-cell;
@@ -21,10 +25,23 @@ body, h1, h2, h3, h4, h5, h6, p, a{
 .style-bg-red{
   background-color: #e74c3c!important;
 }
+.style-bg-grey{
+  background-color: #34495e!important;
+}
 .style-arrow {
   text-align: center;
   margin: 5% 0;
   color: white;
+}
+
+.style-h3-text{
+  color:white;
+  text-align: center;
+}
+@media (max-width: 600px){
+  .style-h3-text{
+    font-size: 20px!important;
+  }
 }
 .style-bounce {
   -moz-animation: bounce 2s infinite;

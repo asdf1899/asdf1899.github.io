@@ -18,8 +18,8 @@
     <script src="js/jquery.min.js"></script>
   </head>
   <body>
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout style-bg-red">
-      <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout style-bg-grey">
+      <header class="mdl-layout__header mdl-layout__header--transparent style-bg-red">
         <div class="mdl-layout__header-row">
           <!-- Title -->
           <span class="mdl-layout-title">asdf1899</span>
@@ -28,7 +28,7 @@
           <!-- Navigation -->
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="#header">HOME</a>
-            <a class="mdl-navigation__link" href="">BIO</a>
+            <a class="mdl-navigation__link" href="#bio">BIO</a>
             <a class="mdl-navigation__link" href="">Link</a>
             <a class="mdl-navigation__link" href="">Link</a>
           </nav>
@@ -37,21 +37,28 @@
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">asdf1899</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">BIO</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="#header">HOME</a>
+          <a class="mdl-navigation__link" href="#bio">BIO</a>
           <a class="mdl-navigation__link" href="">Link</a>
           <a class="mdl-navigation__link" href="">Link</a>
         </nav>
       </div>
       <main class="mdl-layout__content">
-        <section id="header" class="style-parent style-bg-angle">
-          <div class="style-child">
-            <h1 class="mdl-color-text--white">Hi.</h1>
-            <div class="style-arrow style-bounce">
-              <i class="material-icons">keyboard_arrow_down</i>
+        <div class="style-bg-right-angle">
+          <section id="header" class="style-parent">
+            <div class="style-child">
+              <h1 class="mdl-color-text--white">Hi.</h1>
+              <div class="style-arrow style-bounce">
+                <i class="material-icons">keyboard_arrow_down</i>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section id="bio" class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h3 class="style-h3-text">I'm Anas Araid. I like clear, outstanding and creative ideas.</h3>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
   </body>
