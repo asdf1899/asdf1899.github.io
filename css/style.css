@@ -1,6 +1,13 @@
 body, h1, h2, h3, h4, h5, h6, p, a{
   font-family: 'Quicksand', sans-serif!important;
 }
+mark{
+  color: white;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
 .mdl-layout__drawer-button {
   color: white;
 }
