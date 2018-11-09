@@ -37,6 +37,7 @@ sO mUch cURiOus!1!!1!
     <script src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="app.js"></script>
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
     <title>Anas Araid</title>
 
   </head>
@@ -76,11 +77,11 @@ sO mUch cURiOus!1!!1!
         <div id="particles-js" width="100%" height="100%" style="width:100%;height:100%">
         </div>
         <script>
-          swal("Congratulation!", "Welcome to my personal website", "success");
           $(document).ready(() => {
               nitemarket.MaterialUtils.activateExpandableFAB();
           });
 
+          // easter egg
           function easterEgg(){
             swal({
               icon: 'img/egg.webp',
@@ -92,10 +93,24 @@ sO mUch cURiOus!1!!1!
             }, 3000);
           }
 
-          // easter egg
           var egg = new Egg("up,up,down,down,left,right,left,right,b,a", function() {
             easterEgg();
           }).listen();
+
+          // send mail
+
+          function sendMail(){
+            var email = document.getElementById("email").value;
+            var text = document.getElementById("project-text").value;
+            Email.send(email,
+            "araid.anas99@gmail.com",
+            "Project collaboration",
+            text,
+            {token: "d1e620d8-3439-4e0d-a06e-4591147f4521"});
+            setTimeout(function(){
+              swal({title:"Email sent!", text:"Thank you, I will answer as soon as possible", icon:"success", buttons: false});
+            }, 1500);
+          }
 
           </script>
         <!-- Floating button espandibile-->
@@ -236,13 +251,14 @@ sO mUch cURiOus!1!!1!
                   </div>
                   <br>
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <textarea class="mdl-textfield__input" type="text" rows= "4" id="project-test" ></textarea>
-                    <label class="mdl-textfield__label" for="project-test">Please, tell me about the project...</label>
+                    <textarea class="mdl-textfield__input" type="text" rows= "4" id="project-text" ></textarea>
+                    <label class="mdl-textfield__label" for="project-text">Please, tell me about the project...</label>
                   </div>
                   <br>
                   <button class="style-button style-gradient-red"
-                          style="width:300px"
-                          onclick="">SEND</button>
+                          style="width:150px"
+                          type="submit"
+                          onclick="sendMail()">SEND</button>
                 </form>
               </div>
             </div>
