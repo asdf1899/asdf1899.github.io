@@ -1,6 +1,13 @@
 body, h1, h2, h3, h4, h5, h6, p, a{
   font-family: 'Quicksand', sans-serif!important;
 }
+#particles-js{
+  position: absolute;
+  z-index: 0;
+}
+canvas{
+  height: 100%!important;
+}
 mark{
   color: white;
   background-color: #e74c3c;
@@ -28,6 +35,7 @@ li{
 .style-diagonal-bg1{
   background-color: #e74c3c;
   background: -webkit-linear-gradient(265deg, #e74c3c 50%, #34495e 50%)!important;
+  z-index: -2;
 }
 .style-diagonal-bg2{
   background-color: #3498db;
