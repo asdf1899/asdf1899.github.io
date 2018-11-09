@@ -1,5 +1,13 @@
 <!doctype>
 <html>
+<!--
+___   ___  _  _ _ _____   ___ _____ ___   _   _       ___ ___  ___  ___ ___ _
+|   \ / _ \| \| ( )_   _| / __|_   _| __| /_\ | |     / __/ _ \|   \| __/ __| |
+| |) | (_) | .` |/  | |   \__ \ | | | _| / _ \| |__  | (_| (_) | |) | _|\__ \_|
+|___/ \___/|_|\_|   |_|   |___/ |_| |___/_/ \_\____|  \___\___/|___/|___|___(_)
+
+sO mUch cURiOus!1!!1!
+-->
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118641473-1"></script>
@@ -26,7 +34,7 @@
     <script src="js/material.min.js"></script>
     <script src="js/sweetalert.js"></script>
     <script src="js/jquery.min.js"></script>
-
+    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
     <title>Anas Araid</title>
 
   </head>
@@ -63,12 +71,30 @@
         </nav>
       </div>
       <main class="mdl-layout__content style-bg-grey">
+
         <script>
           swal("Congratulation!", "Welcome to my personal website", "success");
           $(document).ready(() => {
               nitemarket.MaterialUtils.activateExpandableFAB();
           });
-        </script>
+
+          function easterEgg(){
+            swal({
+              icon: 'img/egg.webp',
+              content:true,
+              buttons: false
+            });
+            setTimeout(function(){
+              swal.close();
+            }, 3000);
+          }
+
+          // easter egg
+          var egg = new Egg("up,up,down,down,left,right,left,right,b,a", function() {
+            easterEgg();
+          }).listen();
+
+          </script>
         <!-- Floating button espandibile-->
         <div class="mdl-fab-bottom-right mdl-button--fab-expandable bottom right mdl-fab-expandable--snack" style="z-index:100">
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color:#f39c12">
@@ -198,7 +224,8 @@
         </section>
         <footer id="footer" style="background-color:#34495e">
           <div style="text-align:center">
-            <h4 class="style-h4-text"><i class="material-icons">code</i> with <i class="material-icons">free_breakfast</i> by <mark>Anas Araid</mark><h4>
+            <h4 class="style-h4-text"><i class="material-icons">code</i> with <i class="material-icons">free_breakfast</i> by <mark>Anas Araid</mark> <i class="egg-link" onclick="easterEgg();">(Don't try konami code)</i></h4>
+            <br>
           </div>
         </footer>
       </main>
