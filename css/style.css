@@ -37,6 +37,22 @@ li{
   background: -webkit-linear-gradient(265deg, #e74c3c 50%, #34495e 50%)!important;
   z-index: -2;
 }
+.style-gradient-red{
+    background: #FF512F;
+    background: -webkit-linear-gradient( to left, #FF512F, #DD2476);
+    background: -moz-linear-gradient( to left, #FF512F, #DD2476);
+    background: -ms-linear-gradient( to left, #FF512F, #DD2476);
+    background: -o-linear-gradient( to left, #FF512F, #DD2476);
+    background: linear-gradient( to left , #FF512F, #DD2476);
+}
+.style-gradient-quote{
+    background: #8360c3;
+    background: -webkit-linear-gradient( to left, #8360c3, #2ebf91);
+    background: -moz-linear-gradient( to left, #8360c3, #2ebf91);
+    background: -ms-linear-gradient( to left, #8360c3, #2ebf91);
+    background: -o-linear-gradient( to left, #8360c3, #2ebf91);
+    background: linear-gradient( to left , #8360c3, #2ebf91);
+}
 .style-diagonal-bg2{
   background-color: #3498db;
   background: -webkit-linear-gradient(-95deg, #3498db 80%, #34495e 50%)!important;
@@ -76,7 +92,7 @@ li{
   padding:10px;
   margin-top:20px;
 }
-.style-button, .style-button-more{
+.style-button, .style-button-more-green, .style-button-more-blue{
   color: white;
   border: none;
   border-radius: 20px!important;
@@ -86,19 +102,23 @@ li{
   margin: 10px;
   outline: none;
 }
-.style-button{
-  background-color: #2980b9;
-}
+
 .style-button:hover{
-  background-color: white;
-  color: #2980b9;
+  box-shadow: 0 12px 19px -6px #DD2476;
 }
-.style-button-more{
+.style-button-more-green{
   background-color: #2ecc71!important;
 }
-.style-button-more:hover{
+.style-button-more-green:hover{
   background-color: white!important;
   color: #2ecc71!important;
+}
+.style-button-more-blue{
+  background-color: #3498db!important;
+}
+.style-button-more-blue:hover{
+  background-color: white!important;
+  color: #3498db!important;
 }
 @media (max-width: 600px){
   .style-h3-text{
