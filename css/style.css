@@ -26,10 +26,12 @@ li{
   text-decoration-color: #e74c3c;
   border:none;
   border-radius: 10px;
+  cursor: pointer;
 }
 .egg-link{
   border-bottom: 0.5px solid #e74c3c;
   border-radius: 30px;
+  cursor: pointer;
 }
 .style-diagonal-bg1{
   background-color: #e74c3c;
