@@ -103,10 +103,13 @@ li{
   width: 150px;
   margin: 10px;
   outline: none;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .style-button:hover{
   box-shadow: 0 12px 19px -6px #DD2476;
+  transition: 0.5s;
 }
 .style-button-more-green{
   background-color: #2ecc71!important;
@@ -114,6 +117,7 @@ li{
 .style-button-more-green:hover{
   background-color: white!important;
   color: #2ecc71!important;
+  transition: 0.5s;
 }
 .style-button-more-blue{
   background-color: #3498db!important;
@@ -121,6 +125,7 @@ li{
 .style-button-more-blue:hover{
   background-color: white!important;
   color: #3498db!important;
+  transition: 0.5s;
 }
 @media (max-width: 600px){
   .style-h3-text{
