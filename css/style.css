@@ -45,7 +45,49 @@ li{
     background: -ms-linear-gradient( to left, #FF512F, #DD2476);
     background: -o-linear-gradient( to left, #FF512F, #DD2476);
     background: linear-gradient( to left , #FF512F, #DD2476);
+  }
+    /*
+    , #23A6D5, #23D5AB
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+*/
 .style-gradient-quote{
     background: #8360c3;
     background: -webkit-linear-gradient( to left, #8360c3, #2ebf91);
