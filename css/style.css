@@ -167,6 +167,12 @@ li{
 .style-button-more-red{
   background-color: #FF512F!important;
 }
+.style-button-more-red:hover{
+  background-color: white!important;
+  color: #FF512F!important;
+  transition: 0.5s;
+  border: 1px solid #FF512F;
+}
 .style-button-more-green:hover{
   background-color: white!important;
   color: #2ecc71!important;
