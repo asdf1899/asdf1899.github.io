@@ -135,7 +135,7 @@ li{
   padding:10px;
   margin-top:20px;
 }
-.style-button, .style-button-more-green, .style-button-more-blue, .style-button-more-violet, .style-button-more-red{
+.style-button, .style-button-more-green, .style-button-more-blue, .style-button-more-violet, .style-button-more-red, .style-button-more-yellow{
   color: white;
   position:relative;
   border: none;
@@ -160,6 +160,15 @@ li{
 .style-button:hover{
   box-shadow: 0 12px 19px -6px #DD2476;
   transition: 0.5s;
+}
+.style-button-more-yellow{
+  background-color: #f1c40f!important;
+}
+.style-button-more-yellow:hover{
+  background-color: white!important;
+  color: #f1c40f!important;
+  transition: 0.5s;
+  border: 1px solid #f1c40f;
 }
 .style-button-more-green{
   background-color: #2ecc71!important;
