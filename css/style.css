@@ -134,6 +134,9 @@ li{
   list-style:circle;
   font-size:20px;
 }
+.style-ul-uses{
+  margin: 0% 20%;
+}
 .style-h3-text, .style-h4-text{
   color:white;
   text-align: center;
