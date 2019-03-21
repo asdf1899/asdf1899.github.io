@@ -28,6 +28,9 @@ li{
   border-radius: 10px;
   cursor: pointer;
 }
+.span-list{
+  padding:0!important;
+}
 .egg-link{
   border-bottom: 0.5px solid #e74c3c;
   border-radius: 30px;
@@ -121,7 +124,16 @@ li{
   margin: 5% 0;
   color: white;
 }
-
+.style-hr{
+  width:100px;
+  border:5px solid #e74c3c;
+  border-radius:10px;
+  background:#e74c3c;
+}
+.style-ul{
+  list-style:circle;
+  font-size:20px;
+}
 .style-h3-text, .style-h4-text{
   color:white;
   text-align: center;
@@ -223,7 +235,15 @@ li{
     font-size: 15px!important;
   }
 }
-
+.style-main-div{
+  text-align:center;
+  padding:10%;padding-bottom:0%;
+  background-color:white;
+}
+.style-main-h1{
+  text-align:left;
+  color:#e74c3c;
+}
 .mdl-fab-bottom-right {
   position: fixed;
   bottom: 24px;
