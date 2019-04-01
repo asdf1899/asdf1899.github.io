@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6, p, a{
+html, body, h1, h2, h3, h4, h5, h6, p, a{
   font-family: 'Quicksand', sans-serif!important;
 }
 #particles-js{
@@ -49,6 +49,7 @@ li{
     background: -o-linear-gradient( to left, #FF512F, #DD2476);
     background: linear-gradient( to left , #FF512F, #DD2476);
   }
+  
     /*
     , #23A6D5, #23D5AB
     -webkit-animation: Gradient 10s ease infinite;

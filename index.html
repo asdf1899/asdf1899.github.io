@@ -58,6 +58,11 @@ sO mUch cURiOus!1!!1!
     <script src="js/type.js"></script>
     <script src="js/pace.js"></script>
     <script src="js/chart.js"></script>
+    <!--
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>-->
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -96,7 +101,6 @@ sO mUch cURiOus!1!!1!
           $(document).ready(() => {
               nitemarket.MaterialUtils.activateExpandableFAB();
           });
-
           // easter egg
           function easterEgg(){
             swal({
@@ -157,7 +161,7 @@ sO mUch cURiOus!1!!1!
 
         <section class="style-diagonal-bg1">
           <div id="header" class="style-parent">
-            <div class="style-child animated fadeInDown">
+            <div class="style-child animated fadeIn">
               <h1 class="mdl-color-text--white">Hi.</h1>
               <h2 class="mdl-color-text--white">I'm Anas Araid</h2>
               <div class="style-arrow style-bounce">
@@ -176,7 +180,6 @@ sO mUch cURiOus!1!!1!
               var typewriter = new Typewriter(job, {
                   loop: true
               });
-
               typewriter.typeString('a student')
                   .pauseFor(3000)
                   .deleteAll()
@@ -194,7 +197,7 @@ sO mUch cURiOus!1!!1!
           </div>
         </section>
         <section style="background:white">
-            <div id="do" class="style-main-div">
+          <div id="do" class="style-main-div animated fadeIn">
             <h1 class="style-main-h1">What I do?</h1>
             <hr class="style-hr">
             <div style="text-align:center;margin:30px">
@@ -217,7 +220,6 @@ sO mUch cURiOus!1!!1!
             <br>
             <h5 class="mdl-color-text--grey-700 span-xp" onclick="location.href='uses/'" style="text-align:left"><i>Take a look at tech tools I use...</i></h5>
           </div>
-
           <div id="xp" style="text-align:center;padding:10%;padding-bottom:0%;background-color:#ecf5fe">
             <h1 style="text-align:left;color:#e74c3c">Experiences</h1>
             <hr style="width:100px;border:5px solid #e74c3c;border-radius:10px;background:#e74c3c;">
@@ -232,6 +234,12 @@ sO mUch cURiOus!1!!1!
                 <li onclick="window.open('http://www.vvf-perginevalsugana.it/', '_blank')"><span class="span-xp">2015 October - Volunteer firefighter</span></li>
               </ul>
             </div>
+            <!--
+            <script>
+              ScrollReveal().reveal('#do');
+              ScrollReveal().reveal('#xp', { delay: 500 });
+            </script>
+            --> 
             <br>
             <div style="text-align:center">
               <canvas id="skills" style="max-height:500px;max-width:100%"></canvas>
