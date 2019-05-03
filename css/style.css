@@ -16,7 +16,8 @@ mark{
   padding: 5px;
 }
 .mdl-layout__drawer-button {
-  color: white;
+  color: white!important;
+  outline:none!important;
 }
 li{
   padding:15px;
