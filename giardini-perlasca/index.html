@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Giardini Perlasca</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="theme-color" content="#4caf50">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anas Araid">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/material.css" />
+    <link rel="stylesheet" href="css/tingle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/material.js"></script>
+    <script src="js/tingle.js"></script>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header tingle-content-wrapper">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title mdl-color-text--white">Giardini Perlasca</span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Progetto QR Park</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="http://www.unitn.it" target="_blank">Università di Trento</a>
+          <a class="mdl-navigation__link" href="https://it.wikipedia.org/wiki/Giorgio_Perlasca" target="_blank">Giorgio Perlasca</a>
+          <a class="mdl-navigation__link" href="https://www.comune.rovereto.tn.it/Vivi-la-citta/Ambiente/Verde-urbano/Parchi-e-giardini" target="_blank">Giardini Perlasca</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <section id="benvenuto">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--1-col"></div>
+              <div class="mdl-cell mdl-cell--10-col mdl-cell--10-col-tablet">
+                <div class="mdl-card style-card mdl-shadow--2dp" style="min-height:150px;width:100%">
+                  <i class="material-icons mdl-color-text--green-800" style="text-align:center">info</i>
+                  <h5>
+                    Ciao! Siamo studenti dell'Università di Trento e Lei ha appena partecipato alla nostra ricerca 
+                    sull'interazione tra le persone ed i QR Code distribuiti nel parco Giardini Perlasca.
+                  </h5>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--1-col"></div>
+            </div>
+          </section>
+          <section id="benvenuto">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--1-col"></div>
+              <div class="mdl-cell mdl-cell--5-col mdl-cell--10-col-tablet">
+                <div class="mdl-card mdl-shadow--2dp style-giorgio-perlasca style-card"
+                     id="giorgioPerlasca"
+                     aria-haspopup="true"
+                     style="width:100%;min-height:300px;">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text"></h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h5 class="mdl-color-text--white"><b>Chi era Giorgio Perlasca?</b></h5>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border" style="text-align:center">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect style-button-ripple" 
+                       onclick="giorgioPerlasca.open();">
+                      Scopri di più
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--5-col mdl-cell--10-col-tablet">
+                <div class="mdl-card mdl-shadow--2dp style-giardini style-card " style="width:100%;min-height:300px;">
+                  <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text"></h2>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <h5 class="mdl-color-text--white"><b>Giardini Perlasca</b></h5>
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border" style="text-align:center">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect style-button-ripple"
+                      onclick="giardini.open();">
+                      Scopri di più
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--1-col"></div>
+            </div>
+          </section>
+          <section>
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--1-col"></div>
+              <div class="mdl-cell mdl-cell--10-col" style="text-align:center">
+                <div style="width:100%;text-align:center;border-radius:20px">
+                  <center>
+                  <iframe width="700" 
+                          height="440" 
+                          src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Giardini%20Perlasca%2C%20Rovereto+(Giardini%20Perlasca)&amp;ie=UTF8&amp;t=k&amp;z=18&amp;iwloc=B&amp;output=embed" 
+                          frameborder="0" 
+                          scrolling="no" 
+                          marginheight="0" 
+                          marginwidth="0"
+                          style="border-radius:20px">
+                  </iframe>
+                  </center>
+                  <style>
+                    #gmap_canvas img{max-width:none!important;background:none!important;}
+                  </style>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--1-col"></div>
+            </div>
+          </section>
+        </div>
+        <script>
+          var giorgioPerlasca = new tingle.modal({
+            closeMethods: ['overlay', 'button', 'escape'],
+            closeLabel: "Chiudi", 
+            onClose: function() {
+              var giorgio = document.getElementById('giorgioPerlasca');
+              giorgio.focus();
+            }  
+          });
+          var giorgioText = '<h1 style="text-align:center">Giorgio Perlasca</h1>'+
+                            '<h5>Quella di Giorgio Perlasca è la straordinaria vicenda di un uomo che, pressoché da solo, nell’inverno del 1944-1945 a Budapest riuscì a salvare dallo sterminio nazista migliaia di ungheresi di religione ebraica inventandosi un ruolo, quello di Console spagnolo, lui che non era né diplomatico né spagnolo.</h5>'+
+                            '<h5>Tornato in Italia dopo la guerra la sua storia non la racconta a nessuno, nemmeno in famiglia, semplicemente perché riteneva d’aver fatto il proprio dovere, nulla di più e nulla di meno.</h5>'+
+                            '<h5>Se non fosse stato per alcune donne ebree ungheresi da lui salvate in quel terribile inverno di Budapest la sua storia sarebbe andata dispersa. Queste donne, a fine degli anni ’80 misero sul giornale della Comunità ebraica di Budapest un avviso di ricerca di un diplomatico spagnolo, Jorge Perlasca, che aveva salvato loro e tanti altri correligionari durante quei mesi terribili della persecuzione nazista a Budapest e alla fine della ricerca ritrovarono un italiano di nome Giorgio Perlasca.</h5>'+
+                            '<h5>Il destino decise che la storia di Giorgio Perlasca venisse conosciuta e ora il suo nome si trova a Gerusalemme, tra i Giusti fra le Nazioni, e un albero a suo ricordo è piantato sulle colline che circondano il Museo dello Yad Vashem.</h5>'+
+                            '<h5>La storia di Giorgio Perlasca dimostra come per ogni individuo è sempre possibile fare delle scelte alternative anche nelle situazioni peggiori, in cui l’assassinio è legge di stato e il genocidio parte di un progetto politico.</h5>';          
+          giorgioPerlasca.setContent(giorgioText);
+          
+          var giardini = new tingle.modal({
+            closeMethods: ['overlay', 'button', 'escape'],
+            closeLabel: "Chiudi",
+          });
+          var giardiniText = '<h1 style="text-align:center">Giardini Perlasca</h1>'+
+                            '<h5>La realizzazione del primo giardino pubblico di Rovereto, nel secondo Ottocento, si inserisce nel quadro dell\'ampio intervento di riordino e abbellimento urbano avviato con la monumentalizzazione del “Corso Nuovo” (ora corso Bettini), elegante boulevard tracciato un secolo prima sul quale sorgono importanti architetture pubbliche e palazzi privati.</h5>'+
+                            '<h5>Risale al 1870 l\'istituzione di una apposita commissione che detterà precise indicazioni sul progetto, affidato all\'architetto-ingegnere Francesco Tamanini, incaricato anche dei vicini cantieri del corpo d\'ingresso del Teatro Sociale e del Politeama Maffei. Lo spazio verde nasce come completamento dello scenografico passeggio che collega il centro storico con l\'espansione settentrionale della città.</h5>'+ 
+                            '<h5>L\'impianto di Tamanini – ricordato anche per i giardini centrali di Arco e per quelli di piazza Dante a Trento – coniuga perfettamente la naturalità caratteristica del giardino tardo romantico con la funzione ricreativa, distribuendo vialetti sinuosi e numerose specie arboree attorno a un\’ellisse centrale adibita a spettacoli e abbellita da un grande spruzzo d\’acqua.</h5>'
+
+                            '<h5>È solamente con il 1881 che i lavori possono ritenersi ultimati e la collettività può giovarsi di un’area verde dove concedersi qualche istante di svago e assistere a manifestazioni cittadine.</h5>'
+
+                            '<h5>Alla storica denominazione di "Giardini Milano", attribuita a seguito dell\'annessione del Trentino al Regno d\'Italia, nel 1993 è succeduta la dedica all\'eroe italiano che riuscì a salvare, nel corso della Seconda guerra mondiale, migliaia di ebrei ungheresi dalla deportazione nazista e dalla Shoah.</h5>'
+                            '<h5>Il giardino, sapientemente modellato grazie all\'abilità di Tamanini nello sfruttare il naturale dislivello del terreno, è percorso da viali un tempo in ghiaia e arricchito da alcuni alberi storici come un gruppo di sofore pendule, un cedro del Libano ed uno dell’Atlante, due platani, una sequoia sempreverde ed alcuni tigli (fig.2).</h5>'
+
+                            '<h5>Un doppio filare di ippocastani contorna lo spazio circolare centrale, che un tempo doveva accogliere fiere e trattenimenti (fig.3). L\'attuale area giochi, sovrapponendosi al progetto originario, esemplifica come uno spazio pubblico possa cambiare anche radicalmente assetto e destinazione sotto la spinta di una società in continua evoluzione.</h5>';
+          giardini.setContent(giardiniText);
+        </script>
+      </main>
+    </div>
+  </body>
+</html>
