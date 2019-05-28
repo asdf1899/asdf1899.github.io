@@ -1,6 +1,12 @@
 html, body, h1, h2, h3, h4, h5, h6, p, a{
   font-family: 'Quicksand', sans-serif!important;
 }
+.mdl-layout__header{
+  background-color: #7c7754!important;
+}
+.style-green{
+  color: #7c7754!important;
+}
 .mdl-layout__drawer-button{
   color:white!important;
 }
@@ -53,19 +59,19 @@ html, body, h1, h2, h3, h4, h5, h6, p, a{
     margin: 20px!important;
   }
   .tingle-modal__close{
-    background-color:#4caf50!important;
+    background-color:#7c7754!important;
   }
 }
 
 ::-moz-selection {
   color: white;
-  background: #4caf50;
+  background: #7c7754!important;
   border-radius: 15px!important;
   padding:5px;
 }
 
 ::selection {
   color: white;
-  background: #4caf50;
+  background: #7c7754!important;
   border-radius: 15px!important;
 }
