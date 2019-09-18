@@ -162,10 +162,31 @@ sO mUch cURiOus!1!!1!
         <section class="style-diagonal-bg1">
           <div id="header" class="style-parent">
             <div class="style-child animated fadeIn">
-              <h1 class="mdl-color-text--white">Hi.</h1>
-              <h2 class="mdl-color-text--white">I'm Anas Araid</h2>
+              <div style="text-align:left;padding:10%">
+                <h1 class="mdl-color-text--white">Hi.</h1>
+                <h1 class="mdl-color-text--white">I'm <b class="mdl-color-text--yellow">Anas</b>,</h1>
+                <h2 class="mdl-color-text--white"><span id="job"></span></h2>
+                <h2 class="mdl-color-text--white">living in Trento.</h2>
+                <script>
+                  var job = document.getElementById('job');
+
+                  var typewriter = new Typewriter(job, {
+                      loop: true
+                  });
+                  typewriter.typeString('a developer')
+                      .pauseFor(800)
+                      .deleteAll()
+                      .typeString('an UX designer')
+                      .pauseFor(800)
+                      .deleteAll()
+                      .typeString('a firefighter')
+                      .pauseFor(800)
+                      .deleteAll()
+                      .start();
+                </script>
+              </div>
               <div class="style-arrow style-bounce">
-                <i class="material-icons">keyboard_arrow_down</i>
+              <i class="material-icons">keyboard_arrow_down</i>
               </div>
             </div>
           </div>
@@ -173,27 +194,11 @@ sO mUch cURiOus!1!!1!
             <h1 class="mdl-color-text--white" style="text-align:left">BIO</h1>
             <hr style="width:100px;border:5px solid white;border-radius:10px;background:white;">
             <br>
-            <h3 class="style-h3-text">I'm <span id="job"></span> that likes clear, creative and cool ideas.<i class="material-icons">all_inclusive</i></h3>
-            <script>
-              var job = document.getElementById('job');
-
-              var typewriter = new Typewriter(job, {
-                  loop: true
-              });
-              typewriter.typeString('a student')
-                  .pauseFor(3000)
-                  .deleteAll()
-              		.typeString('a developer')
-                  .pauseFor(1000)
-                  .deleteAll()
-              		.typeString('an UX/UI designer')
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString('a volunteer firefighter')
-                  .pauseFor(1000)
-                  .deleteAll()
-              		.start();
-            </script>
+            <h4 class="style-h3-text" style="text-align: justify">
+              I have always been passionate about everything related to technology, especially
+              on software development and 
+              how the look & feel of a digital product affects the way we perceive it and what we feel just by looking at it.
+            </h4>
           </div>
         </section>
         <section style="background:white">
