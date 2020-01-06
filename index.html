@@ -368,11 +368,20 @@ sO mUch cURiOus!1!!1!
             </div>
           </div>
         </section>
-        <section class="style-gradient-red" style="padding:30px">
-          <div style="text-align:center">
+        <section class="style-gradient-red" style="padding:40px;min-height:220px;">
+          <div style="text-align:center;">
             <i>
-            <h3 class="style-h3-text">Take the best that exists and make it better.</h3>
-            <h3 class="style-h3-text">If doesn't exist, create it. <i class="material-icons">whatshot</i></h3></i>
+              <script>
+                var quotes = new Array();
+                $.getJSON("quotes.json", function(json) {
+                    var count = Object.keys(json).length;
+                    for(var i=0; i < count; i++) {
+                      quotes[i] = json[i];
+                    }
+                });
+              </script>  
+              <h3 class="style-h3-text"></h3>
+            </i>
             <br>
             <br>
           </div>
