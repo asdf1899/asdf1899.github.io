@@ -371,12 +371,13 @@ sO mUch cURiOus!1!!1!
         <section class="style-gradient-red" style="padding:40px;min-height:220px;">
           <div style="text-align:center;">
             <br>            
+            <br>            
             <i>
               <h3 id="quote" class="style-h3-text"></h3>
               <script>
                 jQuery(document).ready(function($){
                   var quotes = new Array();
-                  $.getJSON("quotes.json", function(json) {
+                  $.getJSON("js/quotes.json", function(json) {
                       var count = Object.keys(json).length;
                       for(var i=0; i < count; i++) {
                         quotes[i] = json[i];
@@ -397,7 +398,6 @@ sO mUch cURiOus!1!!1!
                 })  
               </script>  
             </i>
-            <br>
           </div>
         </section>
         <section id="contact" style="background-color:#ecf5fe">
