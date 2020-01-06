@@ -370,19 +370,33 @@ sO mUch cURiOus!1!!1!
         </section>
         <section class="style-gradient-red" style="padding:40px;min-height:220px;">
           <div style="text-align:center;">
+            <br>            
             <i>
+              <h3 id="quote" class="style-h3-text"></h3>
               <script>
-                var quotes = new Array();
-                $.getJSON("quotes.json", function(json) {
-                    var count = Object.keys(json).length;
-                    for(var i=0; i < count; i++) {
-                      quotes[i] = json[i];
+                jQuery(document).ready(function($){
+                  var quotes = new Array();
+                  $.getJSON("quotes.json", function(json) {
+                      var count = Object.keys(json).length;
+                      for(var i=0; i < count; i++) {
+                        quotes[i] = json[i];
+                      }
+                  });
+                  var j=0;
+                  setInterval(function(){
+                    console.log(quotes.length);
+                    if (j == quotes.length){
+                      j=0;
                     }
-                });
+                    $('#quote').fadeOut(500, function() {
+                        $(this).text(quotes[j]);
+                        j++;
+                    });
+                    $('#quote').fadeIn(500);
+                  }, 6000);
+                })  
               </script>  
-              <h3 class="style-h3-text"></h3>
             </i>
-            <br>
             <br>
           </div>
         </section>
