@@ -44,6 +44,7 @@ sO mUch cURiOus!1!!1!
     <link type="text/css" rel="stylesheet" href="css/material.min.css" />
     <link type="text/css" rel="stylesheet" href="css/mdl-expandablefab.min.css" />
     <link type="text/css" rel="stylesheet" href="css/animate.css" />
+    <link type="text/css" rel="stylesheet" href="css/timeline.min.css" />
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link type="text/css" href="css/font-quicksand.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -224,56 +225,139 @@ sO mUch cURiOus!1!!1!
             <h5 class="mdl-color-text--grey-700 span-xp" onclick="location.href='https://anasaraid.me/stuff/'" style="text-align:left;display:inline"><i>Or at the my articles</i></h5>
             <br><br>  
           </div>
+          <script>
+            timeline(document.querySelectorAll('.timeline'), {
+              verticalStartPosition: 'right',
+              verticalTrigger: '150px'
+            });
+          </script>
           <div id="xp" style="text-align:center;padding:10%;padding-bottom:0%;background-color:#ecf5fe">
             <h1 style="text-align:left;color:#e74c3c">Experiences</h1>
             <hr style="width:100px;border:5px solid #e74c3c;border-radius:10px;background:#e74c3c;">
             <div style="text-align:center;margin:30px">
-              <ul class="mdl-color-text--grey-700" style="text-align:left;list-style:circle;font-size:20px">
-                <li onclick="window.open('http://hackathon.bz.it/user/anas-araid', '_blank')"><span class="span-xp">2019 November - NOI Hackathon SFScon Edition 2019 solver (Noi Techpark)</span></li>
-                <li onclick="window.open('https://magazine.fbk.eu/it/news/climathon-2019-a-rovereto-linnovazione-per-lambiente/', '_blank')"><span class="span-xp">2019 October - Climathon 2019 winners (FBK and Climate-kic)</span></li>
-                <li onclick="window.open('https://www.unitn.it', '_blank')"><span class="span-xp">2018 October - Interfaces and communication technologies student (UniTn)</span></li>
-                <li onclick="window.open('https://www.curiepergine.gov.it/', '_blank')"><span class="span-xp">2018 July - High school degree in computer science and telecommunications (Marie Curie Institute)</span></li>
-                <li onclick="window.open('https://www.ies.it', '_blank')"><span class="span-xp">2017 October - Intern NodeJS developer at I&S (Informatica e Servizi)</span></li>
-                <li onclick="window.open('https://www.fbk.eu', '_blank')"><span class="span-xp">2017 July    - Intern Web developer at FBK in ict4g unit (European Research Center)</span></li>
-                <li onclick="window.open('https://www.ies.it', '_blank')"><span class="span-xp">2017 June    - Intern .NET developer at I&S (Informatica e Servizi)</span></li>
-                <li onclick="window.open('https://www.ies.it', '_blank')"><span class="span-xp">2017 March   - Intern .NET developer at I&S (Informatica e Servizi)</span></li>
-                <li onclick="window.open('https://www.fbk.eu', '_blank')"><span class="span-xp">2016 July    - Intern Web developer at FBK in ict4g unit (European Research Center)</span></li>
-                <li onclick="window.open('http://www.vvf-perginevalsugana.it/', '_blank')"><span class="span-xp">2015 October - Volunteer firefighter</span></li>
-              </ul>
-            </div>
-            <br>
-            <div style="text-align:center">
-              <canvas id="skills" style="max-height:500px;max-width:100%"></canvas>
-              <script>
-                var ctx = document.getElementById("skills").getContext('2d');
-                chartColors = ['#e74c3c', '#e67e22', '#2ecc71', '#f1c40f', '#3498db','#9b59b6','#34495e'];
-                var data = {
-                  labels: ['C#', 'PHP', 'Javascript', 'Java', 'Python', 'C/C++', 'Ruby'],
-                  datasets: [{
-                    label: 'SKILLS',
-                    data: [95, 90, 85, 75, 65, 45, 40],
-                    fill: false,
-                    backgroundColor: ["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],
-                    borderColor: ["rgba(255, 99, 132)","rgba(255, 159, 64)","rgba(255, 205, 86)","rgba(75, 192, 192)","rgba(54, 162, 235)","rgba(153, 102, 255)","rgba(201, 203, 207)"],
-                    borderWidth:1
-                   }]
-                }
-                var myBarChart = new Chart(ctx, {
-                    type: 'horizontalBar',
-                    data: data,
-                    options: {
-                      "responsive": true,
-                      "maintainAspectRatio": false,
-              				scales: {
-                        xAxes:[{
-                          ticks:{
-                            beginAtZero:true
-                          }
-                        }]
+              <div class="timeline" data-vertical-start-position="right" data-vertical-trigger="100px">
+                <div class="timeline__wrap">
+                  <div class="timeline__items">
+                    <div class="timeline__item timeline__item--right">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('http://hackathon.bz.it/user/anas-araid', '_blank')">
+                          <h5>NOI Hackathon SFScon Edition 2019 solver</h5>
+                        </span>
+                        <h6>2019 November</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--left">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://magazine.fbk.eu/it/news/climathon-2019-a-rovereto-linnovazione-per-lambiente/', '_blank')">
+                          <h4>Climathon 2019 winner (FBK and Climate-kic)</h4>
+                        </span>
+                        <h6>2019 October</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--right">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://www.unitn.it', '_blank')">
+                          <h4>Interfaces and communication technologies student (UniTn)</h4>
+                        </span>
+                        <h6>2018 October</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--left">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://www.curiepergine.edu.it/', '_blank')">
+                          <h4>High school degree in computer science and telecommunications</h4>
+                        </span>
+                        <h6>2018 July</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--right">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://www.ies.it', '_blank')">
+                          <h4>Intern NodeJS developer at I&S</h4>
+                        </span>
+                        <h6>2017 October</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--left">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://www.fbk.eu', '_blank')">
+                          <h4>Intern Web developer at FBK in ict4g unit</h4>
+                        </span>
+                        <h6>2017 July</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--right">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://www.ies.it', '_blank')">
+                          <h4>Intern .NET developer at I&S</h4>
+                        </span>
+                        <h6>2017 June</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--left">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://www.ies.it', '_blank')">
+                          <h4>Intern .NET developer at I&S</h4>
+                        </span>
+                        <h6>2017 March</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--right">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('https://www.fbk.eu', '_blank')">
+                          <h4>Intern Web developer at FBK in ict4g unit</h4>
+                        </span>
+                        <h6>2016 July</h6>
+                      </div>
+                    </div>
+                    <div class="timeline__item timeline__item--left">
+                      <div class="timeline__content style-timeline-content">
+                        <span class="span-xp" onclick="window.open('http://www.vvf-perginevalsugana.it/', '_blank')">
+                          <h4>Volunteer firefighter</h4>
+                        </span>
+                        <h6>2015 October</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <br>
+              <br>
+              <div style="text-align:center">
+                <canvas id="skills" style="max-height:500px;max-width:100%"></canvas>
+                <script>
+                  var ctx = document.getElementById("skills").getContext('2d');
+                  chartColors = ['#e74c3c', '#e67e22', '#2ecc71', '#f1c40f', '#3498db','#9b59b6','#34495e'];
+                  var data = {
+                    labels: ['C#', 'Javascript', 'PHP', 'Java', 'Python', 'C/C++', 'Ruby'],
+                    datasets: [{
+                      label: 'SKILLS',
+                      data: [95, 90, 85, 75, 65, 45, 40],
+                      fill: false,
+                      backgroundColor: ["rgba(255, 99, 132, 0.2)","rgba(255, 159, 64, 0.2)","rgba(255, 205, 86, 0.2)","rgba(75, 192, 192, 0.2)","rgba(54, 162, 235, 0.2)","rgba(153, 102, 255, 0.2)","rgba(201, 203, 207, 0.2)"],
+                      borderColor: ["rgba(255, 99, 132)","rgba(255, 159, 64)","rgba(255, 205, 86)","rgba(75, 192, 192)","rgba(54, 162, 235)","rgba(153, 102, 255)","rgba(201, 203, 207)"],
+                      borderWidth:1
+                     }]
+                  }
+                  var myBarChart = new Chart(ctx, {
+                      type: 'horizontalBar',
+                      data: data,
+                      options: {
+                        "responsive": true,
+                        "maintainAspectRatio": false,
+                        scales: {
+                          xAxes:[{
+                            ticks:{
+                              beginAtZero:true
+                            }
+                          }]
+                        }
                       }
-              			}
-                });
-              </script>
+                  });
+                </script>
+              </div>
+              <br>
             </div>
           </div>
           <div id="projects" style="text-align:center;margin-bottom:10%;padding:10%;">
@@ -434,5 +518,6 @@ sO mUch cURiOus!1!!1!
         </footer>
       </main>
     </div>
+    <script src="js/timeline.min.js"></script>
   </body>
 </html>

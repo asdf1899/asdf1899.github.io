@@ -271,6 +271,12 @@ li{
   text-align:left;
   color:#e74c3c;
 }
+
+.style-timeline-content{
+  border:none!important;
+  box-shadow: 0 12px 19px -6px #FF512F;
+}
+
 .mdl-fab-bottom-right {
   position: fixed;
   bottom: 24px;
