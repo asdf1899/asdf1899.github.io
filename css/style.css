@@ -177,6 +177,7 @@ li{
   color: white;
   background-color: transparent;
   outline: none;
+  cursor: pointer!important;
 }
 .style-button:hover{
   box-shadow: 0 12px 19px -6px #DD2476;
