@@ -1,7 +1,8 @@
 import React from 'react';
 import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage'
-import Home from './components/Home';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
 import './App.css';
 
 function App() {
@@ -11,8 +12,7 @@ function App() {
       <FullpageNavigation/>
       <FullPageSections>
         <Home/>
-        <FullpageSection>
-        </FullpageSection>
+        <About/>
         <FullpageSection style={{
           backgroundColor: 'firebrick',
           padding: '1em',
