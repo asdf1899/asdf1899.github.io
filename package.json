@@ -15,6 +15,7 @@
     "react-scripts": "4.0.1",
     "react-typist": "^2.0.5",
     "react-typist-loop": "^0.0.5",
+    "react-wavify": "^1.5.2",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
@@ -47,6 +48,7 @@
     "babel-eslint": "^10.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "postcss-cli": "^8.3.1",
+    "react-social-icons": "^4.1.0",
     "tailwindcss": "^2.0.2"
   }
 }
