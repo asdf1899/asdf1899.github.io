@@ -5,10 +5,9 @@ const Navbar = () => (
       <h3 className="text-gray-800 cursor-pointer" onClick={() => window.scrollTo(0,0)}>Anas Araid</h3>
     </div>
     <div className="w-1/3 text-center p-2">
-      <h2 className="text-lg text-gray-700"></h2>
     </div>
     <div className="w-1/3 text-right flex justify-end">
-
+      <h2 className="text-lg text-gray-700">About</h2>
     </div>
   </header>
 )

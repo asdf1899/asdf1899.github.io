@@ -1,8 +1,8 @@
 import React from 'react';
 import { FullpageSection } from '@ap.cx/react-fullpage';
-import logoBelka from '../assets/work/belka.svg'
-import logoFbk from '../assets/work/fbk.svg'
-import logoIes from '../assets/work/ies.svg'
+import logoBelka from '../assets/img/belka.svg'
+import logoFbk from '../assets/img/fbk.svg'
+import logoIes from '../assets/img/ies.svg'
 //import BackgroundBlob from './BackgroundBlob';
 //<BackgroundBlob size="60vh" style={{backgroundImage: 'linear-gradient(to right, #acb6e5, #86fde8)', top: '55%', right: '25%'}}/>
 

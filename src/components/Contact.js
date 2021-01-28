@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { FullpageSection } from '@ap.cx/react-fullpage';
-import github from '../assets/work/github.png';
+import github from '../assets/img/github.png';
 import { Blob } from 'react-blob';
 import { SocialIcon } from 'react-social-icons';
 import Wave from 'react-wavify'
@@ -52,13 +52,14 @@ const Contact = () => (
               points: 3
             }}
       >
-      <defs>
-        <linearGradient id="gradient" gradientTransform="rotate(0)">
-          <stop offset="10%"  stopColor="#acb6e5" />
-          <stop offset="90%" stopColor="#86fde8" />
-        </linearGradient>
-      </defs>
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(0)">
+            <stop offset="10%"  stopColor="#acb6e5" />
+            <stop offset="90%" stopColor="#86fde8" />
+          </linearGradient>
+        </defs>
       </Wave>
+      <h5 className="z-10 p-4 absolute bottom-0 text-base sm:text-base md:text-lg lg:text-lg xl:text-lg">Built with <a className="cursor-pointer underline " onClick={ () => window.open('https://reactjs.org/')}>React</a> and deployed on <a className="cursor-pointer underline " onClick={ () => window.open('https://github.com/asdf1899/asdf1899.github.io/')}>Github</a>.</h5>
     </section>
   </FullpageSection>
 )
