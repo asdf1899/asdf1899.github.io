@@ -12,7 +12,7 @@ const Contact = () => (
       <div className="flex flex-col w-full text-center px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
         <br/>
         <h4 className="text-gray-700 text-center text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text pt-12">
-          Let's create something brilliant together.
+          Let's create something brilliant together 💫
         </h4>
         <br/>
         <Blob 
