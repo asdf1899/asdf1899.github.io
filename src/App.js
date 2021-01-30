@@ -6,7 +6,7 @@ import {
 import ReactGA from 'react-ga';
 import dotenv from 'dotenv';
 
-import Fullpage, { FullPageSections, FullpageNavigation } from '@ap.cx/react-fullpage'
+import Fullpage, { FullPageSections } from '@ap.cx/react-fullpage'
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Bio from './components/Bio';
@@ -29,7 +29,6 @@ const Homepage = () => {
   ReactGA.pageview('/');
   return (
     <Fullpage>
-      <FullpageNavigation/>
       <Navbar/>
       <FullPageSections>
         <Home/>

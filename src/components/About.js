@@ -71,11 +71,11 @@ const About = () => {
                 </Section>
                 <Section title='Intern .NET Developer'>
                   <Description variant='subtitle' text='Informatica e Servizi - I&S' />
-                  <Description text='Refractoring Autocad libraries' />
+                  <Description text='Refractoring old C libraries' />
                 </Section>
                 <Section title='Intern .NET Developer'>
                   <Description variant='subtitle' text='Informatica e Servizi - I&S' />
-                  <Description text='DBDataExport - Export shapefiles from geospatial db' />
+                  <Description text='DBDataExport - A tool that exports shapefiles from geospatial db' />
                 </Section>
               </BodyContent>
             </Container>
@@ -102,7 +102,7 @@ const About = () => {
                 </Section>
                 <Section title='Climathon - first prize'>
                   <Description variant='subtitle' text='Climate-kic and FBK' />
-                  <Description text='We have found a solution for the Rovereto challenges for sustainable management of waste electrical and electronic equipment (WEEE).' />
+                  <Description text='Eleco - We have found a solution for the Rovereto challenges for sustainable management of waste electrical and electronic equipment (WEEE).' />
                 </Section>
               </BodyContent>
             </Container>
@@ -111,7 +111,6 @@ const About = () => {
               <BodyContent>
                 <Section title='Hacking for Southern Africa'>
                   <Description variant='subtitle' text='FBK - ict4g unit' />
-                  <Description text='High school degree in computer science and telecommunications' />
                 </Section>
               </BodyContent>
             </Container>
@@ -156,7 +155,9 @@ const About = () => {
           </ul>
         </div>
         <div className="flex flex-wrap w-full my-12 px-12 sm:px-8 md:px-24 lg:px-48">
-          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Sometimes I write things here</h4>
+          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">
+            Sometimes I write things <a className="cursor-pointer underline " onClick={ () => window.open('https://anasaraid.me/stuff')}>here</a> 🖊️
+            </h4>
         </div>
         <h5 className="z-10 bottom-0 p-4 text-sm md:text-md lg:text-md xl:text-md">Built with <a className="cursor-pointer underline " onClick={ () => window.open('https://reactjs.org/')}>React</a> and deployed on <a className="cursor-pointer underline " onClick={ () => window.open('https://github.com/asdf1899/asdf1899.github.io/')}>Github</a>.</h5>
       </section>

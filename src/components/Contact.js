@@ -33,7 +33,7 @@ const Contact = () => (
           <div className="flex w-full md:w-1/3 lg:w-1/3 xl:w-1/3">
             <div className="flex w-1/3 justify-center" >
               <SocialIcon 
-                className="style-icon"
+                className="style-icon cursor-pointer"
                 onClick={() => window.open('https://it.linkedin.com/public-profile/in/anas-araid')}
                 network="linkedin"
                 bgColor="#000000" 
@@ -41,14 +41,14 @@ const Contact = () => (
             </div>
             <div className="flex w-1/3 justify-center">
               <SocialIcon 
-                className="style-icon" 
+                className="style-icon cursor-pointer" 
                 url="mailto:araid.anas99@gmail.com" 
                 bgColor="#000000"
               />
             </div>
             <div className="flex w-1/3 justify-center">
               <SocialIcon 
-                className="style-icon"
+                className="style-icon cursor-pointer"
                 network="instagram"
                 onClick={() => window.open('https://www.instagram.com/anas.araid/')}
                 bgColor="#000000"/>
