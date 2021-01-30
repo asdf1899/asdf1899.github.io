@@ -3,6 +3,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import ReactGA from 'react-ga';
+import dotenv from 'dotenv';
 
 import Fullpage, { FullPageSections, FullpageNavigation } from '@ap.cx/react-fullpage'
 import Navbar from './components/Navbar';
@@ -13,6 +15,9 @@ import Contact from './components/Contact';
 import About from './components/About';
 import './App.css';
 
+dotenv.config({ path: '../../.env'});
+ReactGA.initialize(process.env.REACT_APP_GA_KEY);
+
 const App = () => (
   <Switch>
     <Route path="/" component={Homepage} exact />
@@ -20,22 +25,29 @@ const App = () => (
   </Switch>
 );
 
-const Homepage = () => (
-  <Fullpage>
-    <FullpageNavigation/>
-    <Navbar/>
-    <FullPageSections>
-      <Home/>
-      <Bio/>
-      <Work/>
-      <Contact/>
-    </FullPageSections>
-  </Fullpage>);
+const Homepage = () => {
+  ReactGA.pageview('/');
+  return (
+    <Fullpage>
+      <FullpageNavigation/>
+      <Navbar/>
+      <FullPageSections>
+        <Home/>
+        <Bio/>
+        <Work/>
+        <Contact/>
+      </FullPageSections>
+    </Fullpage>
+  );
+};
 
-const AboutPage = () => (
-  <div>
-    <Navbar/>
-    <About/>
-  </div>
-)
+const AboutPage = () => {
+  ReactGA.pageview('/about');
+  return (
+    <div>
+      <Navbar/>
+      <About/>
+    </div>
+  );
+}
 export default App;

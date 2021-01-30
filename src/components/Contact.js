@@ -32,13 +32,26 @@ const Contact = () => (
         <div className="flex w-full justify-center pt-12 px-8 h-3/4">
           <div className="flex w-full md:w-1/3 lg:w-1/3 xl:w-1/3">
             <div className="flex w-1/3 justify-center" >
-              <SocialIcon className="style-icon" url="https://it.linkedin.com/public-profile/in/anas-araid" bgColor="#000000" />
+              <SocialIcon 
+                className="style-icon"
+                onClick={() => window.open('https://it.linkedin.com/public-profile/in/anas-araid')}
+                network="linkedin"
+                bgColor="#000000" 
+              />
             </div>
             <div className="flex w-1/3 justify-center">
-              <SocialIcon className="style-icon" url="mailto:araid.anas99@gmail.com" bgColor="#000000"/>
+              <SocialIcon 
+                className="style-icon" 
+                url="mailto:araid.anas99@gmail.com" 
+                bgColor="#000000"
+              />
             </div>
             <div className="flex w-1/3 justify-center">
-              <SocialIcon className="style-icon" url="https://www.instagram.com/anas.araid/" bgColor="#000000"/>
+              <SocialIcon 
+                className="style-icon"
+                network="instagram"
+                onClick={() => window.open('https://www.instagram.com/anas.araid/')}
+                bgColor="#000000"/>
             </div>
           </div>
         </div>

@@ -155,6 +155,9 @@ const About = () => {
             <li>- PHP</li>
           </ul>
         </div>
+        <div className="flex flex-wrap w-full my-12 px-12 sm:px-8 md:px-24 lg:px-48">
+          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Sometimes I write things here</h4>
+        </div>
         <h5 className="z-10 bottom-0 p-4 text-sm md:text-md lg:text-md xl:text-md">Built with <a className="cursor-pointer underline " onClick={ () => window.open('https://reactjs.org/')}>React</a> and deployed on <a className="cursor-pointer underline " onClick={ () => window.open('https://github.com/asdf1899/asdf1899.github.io/')}>Github</a>.</h5>
       </section>
   )
