@@ -11,6 +11,7 @@ const Navbar = () => (
     <div className="w-1/3 text-right flex justify-end">
       <h2 className="text-lg text-gray-700">
         <Link to='/about'
+              onClick={() => window.scrollTo(0,0)}
               className="cursor-pointer underline">
           About
         </Link>

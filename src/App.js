@@ -10,12 +10,13 @@ import Home from './components/Home';
 import Bio from './components/Bio';
 import Work from './components/Work';
 import Contact from './components/Contact';
+import About from './components/About';
 import './App.css';
 
 const App = () => (
   <Switch>
     <Route path="/" component={Homepage} exact />
-    <Route path="/about" component={About} />
+    <Route path="/about" component={AboutPage} />
   </Switch>
 );
 
@@ -31,13 +32,10 @@ const Homepage = () => (
     </FullPageSections>
   </Fullpage>);
 
-const About = () => (
-  <Fullpage>
-    <FullpageNavigation/>
+const AboutPage = () => (
+  <div>
     <Navbar/>
-    <FullPageSections>
-      <Contact/>
-    </FullPageSections>
-  </Fullpage>
+    <About/>
+  </div>
 )
 export default App;

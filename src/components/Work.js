@@ -1,10 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { FullpageSection } from '@ap.cx/react-fullpage';
 import logoBelka from '../assets/img/belka.svg'
 import logoFbk from '../assets/img/fbk.svg'
 import logoIes from '../assets/img/ies.svg'
-//import BackgroundBlob from './BackgroundBlob';
-//<BackgroundBlob size="60vh" style={{backgroundImage: 'linear-gradient(to right, #acb6e5, #86fde8)', top: '55%', right: '25%'}}/>
 
 const Work = () => (
   <FullpageSection>
@@ -14,21 +13,31 @@ const Work = () => (
       </div>
       <div className="flex flex-wrap w-full">
         <div className="flex w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 justify-center md:justify-end lg:justify-end xl:justify-end" >
-          <img src={logoBelka} className="text-center h-16 md:h-24 lg:h-24 xl:h-24" />
+          <img src={logoBelka} 
+               className="style-icon cursor-pointer text-center h-16 md:h-24 lg:h-24 xl:h-24"
+               onClick={() => window.open('https://belkadigital.com')} 
+          />
         </div>
         <div className="flex w-full pt-3 sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 justify-center">
-          <img src={logoFbk} className="text-center w-full h-16 md:h-24 lg:h-24 xl:h-24"  />
+          <img src={logoFbk} 
+               className="style-icon cursor-pointer text-center w-full h-16 md:h-24 lg:h-24 xl:h-24"
+               onClick={() => window.open('https://www.fbk.eu/en/')} 
+            />
         </div>
         <div className="flex w-full pt-3 md:pt-6 lg:pt-6 xl:pt-6 sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 justify-center md:justify-start lg:justify-start xl:justify-start text-left">
-          <img src={logoIes} className="text-center h-12 md:h-16 lg:h-16 xl:h-16" />
+          <img src={logoIes} 
+               className="style-icon cursor-pointer text-center h-12 md:h-16 lg:h-16 xl:h-16" 
+               onClick={() => window.open('https://www.ies.it/')} 
+          />
         </div>
       </div>
       <div className="flex flex-col w-full text-center px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
         <h4 className="text-gray-700 text-center text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text">
-          <a onClick={() => window.open('https://github.com/asdf1899')}
-            className="cursor-pointer underline" >
+          <Link to='/about'
+                onClick={() => window.scrollTo(0,0)}
+                className="cursor-pointer underline" >
             See more
-          </a>
+          </Link>
         </h4>  
       </div>
     </section>
