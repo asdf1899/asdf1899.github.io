@@ -9,7 +9,7 @@ const Work = () => (
   <FullpageSection>
     <section className="flex h-screen flex-wrap">
       <div className="flex flex-col w-full text-center mt-6 px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
-        <h4 className="text-gray-700 text-left text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl w-full style-home-text">I worked for 🚀</h4>  
+        <h4 className="style-text-white text-left text-xl sm:text-xl md:text-3xl lg:text-3xl xl:text-3xl w-full style-home-text">I worked for 🚀</h4>  
       </div>
       <div className="flex flex-wrap w-full">
         <div className="flex w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 justify-center md:justify-end lg:justify-end xl:justify-end" >
@@ -32,7 +32,7 @@ const Work = () => (
         </div>
       </div>
       <div className="flex flex-col w-full text-center px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
-        <h4 className="text-gray-700 text-center text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text">
+        <h4 className="style-text-white text-center text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text">
           <Link to='/about'
                 onClick={() => window.scrollTo(0,0)}
                 className="cursor-pointer underline" >

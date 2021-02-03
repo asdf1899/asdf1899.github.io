@@ -11,22 +11,22 @@ import BackgroundBlob from './BackgroundBlob';
 
 const About = () => {
   const customTheme = {
-    yearColor: '#405b73',
-    lineColor: '#d0cdc4',
-    dotColor: '#262626',
-    borderDotColor: '#d0cdc4',
-    titleColor: '#405b73',
-    subtitleColor: '#bf9765',
-    textColor: '#262626',
+    yearColor: '#ffffff',
+    lineColor: '#ff6a00',
+    dotColor: '#ffffff',
+    borderDotColor: '#ffffff',
+    titleColor: '#ffffff',
+    subtitleColor: '#ff6a00',
+    textColor: '#ffffff',
    };
    return (
       <section className="flex h-screen flex-wrap">
-        <BackgroundBlob size="20vh" style={{backgroundImage: 'linear-gradient(to right, #acb6e5, #86fde8)', right: '5%'}}/>
-        <BackgroundBlob size="15vh" style={{backgroundImage: 'linear-gradient(to right, #acb6e5, #86fde8)', right: '5%'}}/>
-        <BackgroundBlob size="10vh" style={{backgroundImage: 'linear-gradient(to right, #acb6e5, #86fde8)', right: '5%'}} />
+        <BackgroundBlob size="20vh" style={{backgroundImage: 'linear-gradient(to right, #ee0979, #ff6a00)', right: '5%'}}/>
+        <BackgroundBlob size="15vh" style={{backgroundImage: 'linear-gradient(to right, #ee0979, #ff6a00)', right: '5%'}}/>
+        <BackgroundBlob size="10vh" style={{backgroundImage: 'linear-gradient(to right, #ee0979, #ff6a00)', right: '5%'}} />
      
         <div className="flex flex-wrap w-full mt-24 px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center"> 
-          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Education 🎓</h4>  
+          <h4 className="style-text-white text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Education 🎓</h4>  
           <Timeline theme={customTheme} dateFormat='ll'>
             <Container>
               <YearContent startDate='2018' />
@@ -47,7 +47,7 @@ const About = () => {
           </Timeline>
         </div>
         <div className="flex flex-wrap w-full px-12 sm:px-8 md:px-24 lg:px-48">
-          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Work 🚀</h4>  
+          <h4 className="style-text-white text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Work 🚀</h4>  
           <Timeline theme={customTheme} dateFormat='ll'>
           <Container>
               <YearContent startDate='2020'/>
@@ -91,7 +91,7 @@ const About = () => {
           </Timeline>
         </div>
         <div className="flex flex-wrap w-full mt-12 px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
-          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Hackathons 💻🏆</h4>  
+          <h4 className="style-text-white text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Hackathons 💻🏆</h4>  
           <Timeline theme={customTheme} dateFormat='ll'>
             <Container>
               <YearContent startDate='2019'/>
@@ -118,8 +118,8 @@ const About = () => {
         </div>
 
         <div className="flex flex-wrap w-full mt-12 px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
-          <h4 className="text-gray-700 text-left text-base md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Projects ⚙️</h4>  
-          <ul className="text-gray-700 mt-6 pl-4 text-left text-base md:text-base lg:text-base xl:text-base w-full style-home-text">
+          <h4 className="style-text-white text-left text-base md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Projects ⚙️</h4>  
+          <ul className="style-text-white mt-6 pl-4 text-left text-base md:text-base lg:text-base xl:text-base w-full style-home-text">
             <li>- <a className="underline cursor-pointer" 
                      onClick={() => window.open('https://anasaraid.me/vvfire-web')} >VVFire</a>
               <ul>
@@ -144,8 +144,8 @@ const About = () => {
           </ul>
         </div>
         <div className="flex flex-wrap w-full my-12 px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
-          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Skills 🔧</h4>  
-          <ul className="text-gray-700 mt-6 pl-4 text-left text-base md:text-base lg:text-base xl:text-base w-full style-home-text">
+          <h4 className="style-text-white text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Skills 🔧</h4>  
+          <ul className="style-text-white mt-6 pl-4 text-left text-base md:text-base lg:text-base xl:text-base w-full style-home-text">
             <li>- React</li>
             <li>- Vue</li>
             <li>- Typescript</li>
@@ -155,11 +155,11 @@ const About = () => {
           </ul>
         </div>
         <div className="flex flex-wrap w-full my-12 px-12 sm:px-8 md:px-24 lg:px-48">
-          <h4 className="text-gray-700 text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">
+          <h4 className="style-text-white text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">
             Sometimes I write things <a className="cursor-pointer underline " onClick={ () => window.open('https://anasaraid.me/stuff')}>here</a> 🖊️
             </h4>
         </div>
-        <h5 className="z-10 bottom-0 p-4 text-sm md:text-md lg:text-md xl:text-md">Built with <a className="cursor-pointer underline " onClick={ () => window.open('https://reactjs.org/')}>React</a> and deployed on <a className="cursor-pointer underline " onClick={ () => window.open('https://github.com/asdf1899/asdf1899.github.io/')}>Github</a>.</h5>
+        <h5 className="style-gradient-text z-10 bottom-0 p-4 text-sm md:text-md lg:text-md xl:text-md">Built with <a className="cursor-pointer underline " onClick={ () => window.open('https://reactjs.org/')}>React</a> and deployed on <a className="cursor-pointer underline " onClick={ () => window.open('https://github.com/asdf1899/asdf1899.github.io/')}>Github</a>.</h5>
       </section>
   )
 }

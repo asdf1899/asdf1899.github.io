@@ -11,20 +11,20 @@ const Contact = () => (
     <section className="flex h-screen flex-wrap">
       <div className="flex flex-col w-full text-center px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
         <br/>
-        <h4 className="text-gray-700 text-center text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text pt-12">
+        <h4 className="style-text-white text-center text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text pt-12">
           Let's create something brilliant together 💫
         </h4>
         <br/>
         <Blob 
           onClick={() => window.open('https://github.com/asdf1899')}
           className="cursor-pointer"
-          style={{backgroundImage: 'linear-gradient(to right, #acb6e5, #86fde8)', padding: '20px'}}>
+          style={{backgroundImage: 'linear-gradient(to right, #ee0979, #ff6a00)', padding: '20px'}}>
             <img src={github} className="style-icon text-center h-8 md:h-16 lg:h-16 xl:h-16" />
         </Blob>
       </div>
       <div className="flex w-full justify-center flex-wrap">
         <div className="flex w-full justify-center h-1/4">
-          <h4 className="text-gray-700 text-center mt-6 text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text">
+          <h4 className="style-text-white text-center mt-6 text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl w-full style-home-text">
             or simply get in touch
           </h4>
         </div>
@@ -36,14 +36,14 @@ const Contact = () => (
                 className="style-icon cursor-pointer"
                 onClick={() => window.open('https://it.linkedin.com/public-profile/in/anas-araid')}
                 network="linkedin"
-                bgColor="#000000" 
+                bgColor="#ffffff" 
               />
             </div>
             <div className="flex w-1/3 justify-center">
               <SocialIcon 
                 className="style-icon cursor-pointer" 
                 url="mailto:araid.anas99@gmail.com" 
-                bgColor="#000000"
+                bgColor="#ffffff"
               />
             </div>
             <div className="flex w-1/3 justify-center">
@@ -51,7 +51,7 @@ const Contact = () => (
                 className="style-icon cursor-pointer"
                 network="instagram"
                 onClick={() => window.open('https://www.instagram.com/anas.araid/')}
-                bgColor="#000000"/>
+                bgColor="#ffffff"/>
             </div>
           </div>
         </div>
@@ -67,12 +67,12 @@ const Contact = () => (
       >
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(0)">
-            <stop offset="10%"  stopColor="#acb6e5" />
-            <stop offset="90%" stopColor="#86fde8" />
+            <stop offset="10%"  stopColor="#ee0979" />
+            <stop offset="90%" stopColor="#ff6a00" />
           </linearGradient>
         </defs>
       </Wave>
-      <h5 className="z-10 p-4 absolute bottom-0 text-sm md:text-md lg:text-md xl:text-md">Built with <a className="cursor-pointer underline " onClick={ () => window.open('https://reactjs.org/')}>React</a> and deployed on <a className="cursor-pointer underline " onClick={ () => window.open('https://github.com/asdf1899/asdf1899.github.io/')}>Github</a>.</h5>
+      <h5 className="style-text-white z-10 p-4 absolute bottom-0 text-sm md:text-md lg:text-md xl:text-md">Built with <a className="cursor-pointer underline " onClick={ () => window.open('https://reactjs.org/')}>React</a> and deployed on <a className="cursor-pointer underline " onClick={ () => window.open('https://github.com/asdf1899/asdf1899.github.io/')}>Github</a>.</h5>
     </section>
   </FullpageSection>
 )
