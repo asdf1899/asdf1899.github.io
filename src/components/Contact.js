@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { FullpageSection } from '@ap.cx/react-fullpage';
-import github from '../assets/img/github.png';
-import { Blob } from 'react-blob';
+import github from '../assets/img/github.svg';
 import { SocialIcon } from 'react-social-icons';
 import Wave from 'react-wavify'
 
@@ -15,12 +14,11 @@ const Contact = () => (
           Let's create something brilliant together 💫
         </h4>
         <br/>
-        <Blob 
-          onClick={() => window.open('https://github.com/asdf1899')}
-          className="cursor-pointer"
-          style={{backgroundImage: 'linear-gradient(to right, #ee0979, #ff6a00)', padding: '20px'}}>
-            <img src={github} className="style-icon text-center h-8 md:h-16 lg:h-16 xl:h-16" />
-        </Blob>
+        <img 
+          src={github} 
+          onClick={() => window.open('https://github.com/asdf1899')} 
+          className="cursor-pointer style-icon text-center h-6 md:h-10 lg:h-10 xl:h-10" 
+        />
       </div>
       <div className="flex w-full justify-center flex-wrap">
         <div className="flex w-full justify-center h-1/4">

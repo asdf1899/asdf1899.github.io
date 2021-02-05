@@ -71,7 +71,7 @@ const About = () => {
                 </Section>
                 <Section title='Intern .NET Developer'>
                   <Description variant='subtitle' text='Informatica e Servizi - I&S' />
-                  <Description text='Refractoring old C libraries' />
+                  <Description text='Refactoring old C libraries' />
                 </Section>
                 <Section title='Intern .NET Developer'>
                   <Description variant='subtitle' text='Informatica e Servizi - I&S' />
