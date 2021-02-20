@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  Switch,
-  Route
-} from "react-router-dom";
+import { HashRouter as Switch, Route } from "react-router-dom";
 import ReactGA from 'react-ga';
 import dotenv from 'dotenv';
 

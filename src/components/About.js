@@ -50,7 +50,7 @@ const About = () => {
           <h4 className="style-text-white text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Work 🚀</h4>  
           <Timeline theme={customTheme} dateFormat='ll'>
           <Container>
-              <YearContent startDate='2020'/>
+            <YearContent startDate='2020'/>
               <BodyContent>
                 <Section title='Intern Web developer'>
                   <Description variant='subtitle' text='Belka Digital' />
@@ -93,6 +93,15 @@ const About = () => {
         <div className="flex flex-wrap w-full mt-12 px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
           <h4 className="style-text-white text-left text-md md:text-lg lg:text-lg xl:text-lg w-full style-home-text">Hackathons 💻🏆</h4>  
           <Timeline theme={customTheme} dateFormat='ll'>
+            <Container>
+              <YearContent startDate='2021' />
+              <BodyContent>
+                <Section title='UX Challenge'>
+                  <Description variant='subtitle' text='HIT - Hub Innovazione Trentino' />
+                  <Description text="5-days design sprint. We redesigned and tested Active Pager's calendar and shifts feature" />
+                </Section>
+              </BodyContent>
+            </Container>
             <Container>
               <YearContent startDate='2019'/>
               <BodyContent>
