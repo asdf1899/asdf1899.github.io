@@ -15,7 +15,7 @@ const Bio = () => (
       </div>
       <div className="flex flex-col w-full sm:w-full md:w-1/3 lg:w-1/3 xl:w-1/3 h-1/3 lg:h-full xl:h-full text-center px-12 sm:px-8 md:px-24 lg:px-48 justify-center items-center">
         <Blob size="28vh" style={{backgroundImage: 'linear-gradient(to right, #ee0979, #ff6a00)'}}>
-          <Avatar src="https://media-exp1.licdn.com/dms/image/C4D03AQFxd_NP8Vbn7w/profile-displayphoto-shrink_200_200/0/1572170777227?e=1615420800&v=beta&t=wK03Xp4Y_D86bhRl2ALykLKZgucoyIMPCHUvNU7AtlI" alt="me"/>
+          <Avatar src="https://anasaraid.me/hosting/portfolio/avatar.jpeg" alt="me"/>
         </Blob>     
       </div>
     </section>
